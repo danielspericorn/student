@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        EC2_HOST = credentials('ec2-host')
-        EC2_USER = credentials('ec2-user')
-        EC2_KEY = credentials('ec2-key')
+        EC2_HOST = 3.110.87.59
+        EC2_USER = ubuntu
+        EC2_KEY = ec2-key
     }
 
     stages {

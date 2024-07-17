@@ -26,9 +26,9 @@ jobs:
 
       - name: Deploy to EC2
         env:
-          EC2_HOST: ${{ secrets.EC2_HOST }}
-          EC2_USER: ${{ secrets.EC2_USER }}
-          EC2_KEY: ${{ secrets.EC2_KEY }}
+          EC2_HOST: ${{ 3.110.87.59 }}
+          EC2_USER: ${{ ubuntu }}
+          EC2_KEY: ${{ dani.pem }}
         run: |
           scp -o StrictHostKeyChecking=no -i $EC2_KEY -r dist/your-angular-project $EC2_USER@$EC2_HOST:/var/www/html
 
